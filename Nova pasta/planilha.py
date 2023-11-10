@@ -7,12 +7,12 @@ book = openpyxl.Workbook()
 print(book.sheetnames)
 
 #como criar uma pagina 
-book.create_sheet("frutas")
+book.create_sheet("Computadores")
 #como selecionar uma pagina
-frutas_page = book['frutas']
-frutas_page.append(['Fruta' , 'Quatidade', 'Preço'])
-frutas_page.append(['Banana', '5',  'R$3,90'])
-frutas_page.append(['Maçã', '12',  'R$6,50'])
-frutas_page.append(['Uva', '25', 'R$12,90'])
+frutas_page = book['Computadores']
+frutas_page.append(["Eletrônica", "Memória ram", "preço"])
+frutas_page.append(['Computador 1', '8gb ram', 'R$ 2500'])
+frutas_page.append(['Computador 2', '16gb ram', 'R$ 5500'])
+frutas_page.append(['Computador 3', '32gb ram','R$ 8500'])
 # salvar planilha
-book.save('Planilha de Conpras.xlsx')
+book.save('Meuscomputadores.xlsx')
